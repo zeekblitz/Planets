@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bixpib80ev25l"]
 
-[ext_resource type="PackedScene" uid="uid://b64434lae1tgk" path="res://Planet/planet.tscn" id="1_gbojd"]
+[ext_resource type="PackedScene" uid="uid://b64434lae1tgk" path="res://Planet/Planet.tscn" id="1_gbojd"]
 
 [node name="Main" type="Node3D"]
 
