@@ -1,10 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://bixpib80ev25l"]
+[gd_scene load_steps=3 format=3 uid="uid://bixpib80ev25l"]
 
+[ext_resource type="Script" path="res://main.gd" id="1_7oack"]
 [ext_resource type="PackedScene" uid="uid://b64434lae1tgk" path="res://Planet/Planet.tscn" id="1_gbojd"]
 
 [node name="Main" type="Node3D"]
+script = ExtResource("1_7oack")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.900721, 0.434398, 0, -0.434398, 0.900721, 0, 1.40716, 2.66413)
+transform = Transform3D(1, 0, 0, 0, 0.999908, 0.0135956, 0, -0.0135956, 0.999908, 0, 0, 3)
 
 [node name="Planet" parent="." instance=ExtResource("1_gbojd")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
